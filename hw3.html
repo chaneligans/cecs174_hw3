@@ -15,8 +15,11 @@
 
             <li>
                 Run the installer. Continue clicking "<b>Next</b>" until the installation is complete.
+                <br>
                 <img src = "https://puu.sh/zMWqt/4feda67832.png">
+                <br>
                 <img src = "https://puu.sh/zMWuR/da12660e9a.png">
+                <br>
                 <img src = "https://puu.sh/zMWxe/2e69633c0c.png">
             </li>
         </ol>
@@ -24,6 +27,7 @@
 
     <li>
         Start PyCharm, then click <b>Create New Project</b> (<b>File</b> > <b>menu</b>)
+        <br>
         <img src = "https://puu.sh/zMWAR/ca2dc3f6d9.png" style = "height:400px;" > 
     </li>
 
@@ -33,11 +37,13 @@
             
             <li>
                 <b>Recommended</b>: create a folder for homework 3 wherever you'd like: 
+                <br>
                 <img src = "https://puu.sh/zMWHV/4227359116.png">
             </li>
             
             <li>
                 Set the location for the project to the folder you just created:
+                <br>
                 <img src = "https://puu.sh/zMWLS/684e489b20.png">
             </li>
         </ol>
@@ -55,20 +61,26 @@
     <li>When the program fully loads, (watch the lower right corner to make sure it does not say "XX processes running" and does not have a progress bar).
         <ol type = "a">
             <li>Wait until the program is ready - no progress bar
+            <br>
             <img src = "https://puu.sh/zMWXV/519cbce336.png" style = "height: 600px;">
             </li>
             
             <li>
             Go to <b>File -> Settings</b>. On the left, expand <b>Project: nameofyourproject</b>.
+            <br>
             <img src = "https://puu.sh/zMX3U/33611aa368.png">
             </li>
             
-            <li>Click <b>Project Interpreter</b> below Project: nameofyourproject. You will see a <b>green plus sign</b>. Click it.<b> NOTE: Mac users</b> will need to select "setuptools" in the Interpreter window and click the "Upgrade" (up arrow) button before proceding, otherwise nothing will work.
-            <img src = "https://puu.sh/zMX6J/9e461d85d6.png">
+            <li>
+                Click <b>Project Interpreter</b> below Project: nameofyourproject. You will see a <b>green plus sign</b>. Click it.<b> NOTE: Mac users</b> will need to select "setuptools" in the Interpreter window and click the "Upgrade" (up arrow) button before proceding, otherwise nothing will work.
+                <br>
+                <img src = "https://puu.sh/zMX6J/9e461d85d6.png">
             </li>
             
             <li>
-                The following window should now be open: <img src = "https://puu.sh/zMX8h/d0b0e66247.png">
+                The following window should now be open: 
+                <br>
+                <img src = "https://puu.sh/zMX8h/d0b0e66247.png">
             </li>
         </ol>
     </li>
@@ -80,7 +92,7 @@
                 <img src = "https://puu.sh/zMXae/6bbd375b03.png">
             </li>
 
-            <li>b. Installation will take a minute. When done, close the two Settings windows to go back to the main PyCharms interface.
+            <li>Installation will take a minute. When done, close the two Settings windows to go back to the main PyCharms interface.
             </li>
         </ol>
     </li>
@@ -97,11 +109,13 @@
                 <ol type = "i">
                     <li>
                         <b>Before</b> - musicbox.py is in a downloads folder:
+                        <br>
                         <img src = "https://puu.sh/zMXkh/ac5464c997.png">
                     </li>
                     
                     <li>
                         <b>After</b> - musicbox.py is now in the project folder:
+                        <br>
                         <img src = "https://puu.sh/zMXll/bac36196ac.png">
                     </li>
             
@@ -110,6 +124,7 @@
     
             <li>
                 If you do this correctly, you wil see the file <b>musicbox.py</b> show up in the Project in PyCharm.
+                <br>
                 <img src = "https://puu.sh/zMXn2/f11e90769d.png">
             </li>
         </ol>
@@ -122,7 +137,9 @@
             <img src = "https://puu.sh/zMXoS/d71a120036.png" style = "height: 700px;">
             </li>
             <li>
-                Name this file <b>soundofmusic.py</b>. This is where you will write your application.<img src = "https://puu.sh/zMXrG/de50c8f135.png">
+                Name this file <b>soundofmusic.py</b>. This is where you will write your application.
+                <br>
+                <img src = "https://puu.sh/zMXrG/de50c8f135.png">
             </li>
         </ol>
     </li>
@@ -145,25 +162,25 @@ Once your project is set up correctly, you will use the following methods to pla
 <ol>
     <li>
         First, at the top of your file, create a music box that you can use globally: <br>
-        <b>my_music = musicbox.MusicBox()</b>
+        <code>my_music = musicbox.MusicBox()</code>
         <br>
         You can put a number from - to 127 in the parentheses to change the instrument that is played.
     </li>
 
     <li>
-        At the bottom of the program after <b>main()</b> is called, write 
+        At the bottom of the program after <code>main()</code> is called, write 
         <br>
-        <b>my_music.close()</b>
+        <code>my_music.close()</code>
         <br>
         or else you will get runtime errors.
     </li>
 
     <li>
-        To play a note: <b>my_music.play_note(<i>*MidiNumber*</i>, <i>*Miliseconds</i>)</b></br>
+        To play a note: <code>my_music.play_note(<i>*MidiNumber*</i>, <i>*Miliseconds</i>)</code>
 
         <ol type = "a">
             <li>
-            Plays a note with the given MIDI number for the given number of milliseconds.
+            This plays a note with the given MIDI number for the given number of milliseconds.
             </li>
 
             <li>
@@ -173,9 +190,10 @@ Once your project is set up correctly, you will use the following methods to pla
             <li>
                 Example:
                 <br>
-                <b>noteToPlay = 61</b> # this is C sharp
+                <code>noteToPlay = 61 # this is C sharp 
                 <br>
-                <b>my_music.play_note(noteToPlay, 500)</b> # plays C sharp for 500 milliseconds.
+                my_music.play_note(noteToPlay, 500) # plays C sharp for 500 milliseconds.
+                </code>
             </li>
         </ol>
     </li>
