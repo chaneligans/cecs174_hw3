@@ -135,7 +135,9 @@
         <ol type = "a">
           <li>
             <code>
-              <pre>def main():
+              <pre>
+import musicbox
+def main():
     m = musicbox.MusicBox()
     m.play_note(60, 1000)
     m.play_chord([60, 64, 67], 1000)
@@ -152,7 +154,11 @@ main()</pre></code> ...which will play a single note for 1 second.
     Once your project is set up correctly, you will use the following methods to play music:
     <ol>
       <li>
-        First, at the top of your file, create a music box that you can use globally: <br>
+        First, make sure to import musicbox at the top of your file:
+        <code>import musicbox</code>
+      </li>
+      <li>
+        Then, create a music box that you can use globally: <br>
         <code>my_music = musicbox.MusicBox()</code>
         <br>
         You can put a number from - to 127 in the parentheses to change the instrument that is played.
